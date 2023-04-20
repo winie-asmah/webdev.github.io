@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+}
+  body{
+    color: white;
+    display: flex;
+    font-size: 16px;
+ 
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    display: inline-block;
+    float: left;
+    align-items: center;
+    width: 240px;
+    padding: 10px;
+    height: 350px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin:  90px auto ;
+    text-align: center;
+    
+    /* Should be removed. Only for demonstration */
+  }
+  .column2{
+    border-radius: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: inline-block;
+    clear: both;
+    display: inline-block;
+  }
+
+  .circle{
+    height: 120px;
+    width: 120px ;
+    background-color: #4828d5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+h4{
+  font-size: 24px;
+  font-weight: 500,700,800;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+strong{
+    font-size: 40px;
+    color: white;
+    font-weight: 800px;
+}
+.button {
+  margin-right:120px;
+  border: none;
+  color: #df6d6c  ;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  width: 300px;
+  height: 55px;
+  cursor: pointer;
+  border-radius: 14px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  word-spacing: 30px;
+   background-color: #fff6f5;
+ 
+}
+.button2{
+  color: #e8b039;
+  background-color: #fffbf2;
+}
+.button3{
+  color: #7af7d5;
+  background-color: #f2fbfa;
+}
+.button4{
+  color: #262aaf;
+  background-color: #f3f3fd;
+  
+}
+.button5{
+  color: white;
+  background-color: #4c38f2;
+  border-radius: 30px;
+  width: 300px;
+  height: 55px;
+}
+b{
+
+  color: black;
+  opacity: 70%
+  
+}
+i{
+  opacity: 60%
+}
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
