@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    
+        box-sizing: border-box;
+       margin: auto;
+       padding: 0;
+       
+      
+}
+body{
+    display: flex;
+    font-size: 16px;
+    
+    font-family: 'Inter', sans-serif;
+    color: white;
+    
+}
+
+
+
+.column {
+        display: inline-block;
+        float: left;
+        align-items: center;
+        width: 400px;
+        height: 300px;
+        background-color:  #1c1938;
+        margin:  90px auto ;
+        text-align: center;
+        border-radius: 5px;
+        
+}
+.card{
+  width: 950px;
+  height: 400px;
+  margin: 175px auto 50px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.list-stat{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.element-list{
+    margin: 14px;
+}
+
+
+
+img {
+  
+  width: 489px;
+  height: 379px;
+  object-fit: fill;
+
+  background-image:
+    linear-gradient(hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)),
+    url(../images/image-header-desktop.jpg);
+    border-radius: 0px 0px 0px 0px;
+    opacity: 60%;
+
+}
+
+
+
+        
+div.b {
+        line-height: 1.6;
+        opacity: 60%;
+        font-size: 14px;
+        
+      }
+h3{
+        font-family: 'Lexend Deca', sans-serif;
+        
+        text-align: center;
+        line-height: 1.8;
+        
+}
+
