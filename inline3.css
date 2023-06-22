@@ -1,114 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik&display=swap");
+
 * {
     box-sizing: border-box;
-    margin: auto;
-    padding: 0;
-}
-  body{
-    color: white;
-    display: flex;
-    font-size: 16px;
- 
-    font-family: 'Hanken Grotesk', sans-serif;
   }
   
-  /* Create two equal columns that floats next to each other */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+  }
+  
+  /* Float four columns side by side */
   .column {
-    display: inline-block;
     float: left;
-    align-items: center;
-    width: 240px;
-    padding: 10px;
-    height: 350px;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin:  90px auto ;
-    text-align: center;
+    width: 27%;
+    padding: 5px 10px;
     
-    /* Should be removed. Only for demonstration */
+    
   }
-  .column2{
-    border-radius: 20px;
-  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 70px 100px;}
   
   /* Clear floats after the columns */
   .row:after {
     content: "";
-    display: inline-block;
+    display: table;
     clear: both;
-    display: inline-block;
+    
   }
-
-  .circle{
-    height: 120px;
-    width: 120px ;
-    background-color: #4828d5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    font-family: 'Hanken Grotesk', sans-serif;
-}
-h4{
-  font-size: 24px;
-  font-weight: 500,700,800;
-  font-family: 'Hanken Grotesk', sans-serif;
-}
-strong{
-    font-size: 40px;
-    color: white;
-    font-weight: 800px;
-}
-.button {
-  margin-right:120px;
-  border: none;
-  color: #df6d6c  ;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  margin: 4px 2px;
-  width: 300px;
-  height: 55px;
-  cursor: pointer;
-  border-radius: 14px;
-  font-family: 'Hanken Grotesk', sans-serif;
-  word-spacing: 30px;
-   background-color: #fff6f5;
- 
-}
-.button2{
-  color: #e8b039;
-  background-color: #fffbf2;
-}
-.button3{
-  color: #7af7d5;
-  background-color: #f2fbfa;
-}
-.button4{
-  color: #262aaf;
-  background-color: #f3f3fd;
   
-}
-.button5{
-  color: white;
-  background-color: #4c38f2;
-  border-radius: 30px;
-  width: 300px;
-  height: 55px;
-}
-b{
-
-  color: black;
-  opacity: 70%
-  
-}
-i{
-  opacity: 60%
-}
-
+  /* Responsive columns */
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
+      display: block;
+      margin-bottom: 30px;
     }
   }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:  16px;
+    text-align: center;
+    background-color: #f8f4f4;
+    border-radius: 10px;
+    width: 270px;
+    height: 425px;
+    transition: .4s;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  header{
+    clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+    padding: 1rem 0;
+  }
+  .Basic{
+    background: linear-gradient(135deg, rgb(0, 119, 238), #06c766);
+  }
+  .Enterprise{
+    background: linear-gradient(135deg, #eea300, #ee5700);
+  }
+  .Professional{
+    background: linear-gradient(135deg, #b202c9, #cf087c);
+  }
+  
+  .card__header-subtitle {
+    display: block;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    text-transform: uppercase;
+    margin-bottom: var(--mb-0-25);
+  }
+  .card__list-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  button{
+    margin: 0.2rem 0;
+    padding: 0.7rem 1rem;
+    outline: none;
+    border-radius: 1rem;
+    font-weight: 700;
+    color: #f1f1f5;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1ms ease-in-out;
+  }
+  button:hover {
+    transform: scale(0.95);
+  }
+  button:active {
+    transform: scale(1);
+  }
+  
+.basic {
+  background: linear-gradient(135deg, rgb(0, 119, 238), #06c766);
+}
+.professional{
+  background: linear-gradient(135deg, #b202c9, #cf087c);
+
+}
+
+.enterprise{
+  background: linear-gradient(135deg, #eea300, #ee5700);
+}
