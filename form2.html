@@ -10,15 +10,15 @@
 </head>
 <body>
     <div class="container">
-        <header>Registration</header>
-        <form action ='#'>
+        <header id="title">Registration</header>
+        <form action ='#' id="form">
             <div class="first form">
                 <div class="personal details">
                     <span class="title">Personal Details</span>
                     <div class="fields">
                         <div class="input-field">
                             <label for="name">Full Name</label>
-                            <input type="text" placeholder="Enter your name" required/>
+                            <input type="text" placeholder="Enter your name" id="name" required/>
                         </div>
 
 
@@ -30,12 +30,12 @@
 
                         <div class="input-field">
                             <label for="Email">Email</label>
-                            <input type="text" placeholder="Enter your email" required/>
+                            <input type="text" placeholder="Enter your email" id="email" required/>
                         </div>
 
                         <div class="input-field">
                             <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
+                            <input type="text" placeholder="Enter mobile number" required>
                         </div>
 
 
@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Occupation</label>
+                            <label for="occupation">Occupation</label>
                             <input type="text" placeholder="Enter your ccupation" required>
                         </div>
 
@@ -77,12 +77,12 @@
 
             <div class="input-field">
                 <label>ID Number</label>
-                <input type="text" placeholder="Enter ID number" required>
+                <input type="text" placeholder="Enter ID number"  id= "IDnumber"  required>
             </div>
 
             <div class="input-field">
                 <label>Issued date</label>
-                <input type="text" placeholder="Enter issued state" required>
+                <input type="date" placeholder="Enter issued state" required>
             </div>
 
             <div class="input-field">
@@ -90,7 +90,7 @@
                 <input type="date" placeholder="Enter expiry date" required>
             </div>
         </div>
-        <button class="nextBtn">
+        <button class="nextBtn" id="next">
             <span class="btnText">Next</span>
             <i class="fa fa-long-arrow-right"></i>
         </button>
@@ -121,7 +121,7 @@
              </div>
 
              <button class="buttons">
-                <div class="backBtn">
+                <div class="backBtn" id="back">
                     <i class="fa fa-long-arrow-left"></i>
                     <span class="btnText">Back</span>
                 </div>
@@ -131,7 +131,7 @@
 
 
                 
-                <button class="sumbit">
+                <button class="sumbit" id="submit">
                     <span class="btnText">Submit</span>
                     <i class="uil uil-navigator"></i>
                 </button>
