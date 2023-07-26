@@ -1,16 +1,16 @@
-const form = document.querySelector("form"),
-        nextBtn = form.querySelector(".nextBtn"),
-        backBtn = form.querySelector(".backBtn"),
-        allInput = form.querySelectorAll(".first input");
+const form=document.getElementById('form');
 
-        nextBtn.addEventListener("click", ()=> {
-            allInput.forEach(input => {
-                if(input.value != ""){
-                    form.classList.add('secActive');
-                }else{
-                    form.classList.remove('secActive');
-                }
-            })
-        })
-        
-        backBtn.addEventListener("click", () => form.classList.remove('secActive'));
+form.addEventListener('submit',function(event){
+    event.preventDefault()//Prevents the form from auto submitting
+
+    let name =document.getElementById('name').value
+    console.log(name)
+
+     let email =document.getElementById('email').value
+     console.log(name)
+
+     let IdNumber =document.getElementById('IDnumber').value
+     console.log(IdNumber)
+
+
+})
